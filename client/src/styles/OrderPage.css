@@ -1,0 +1,176 @@
+/* ============ Base ============ */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9f9;
+  color: #333;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============ Headers ============ */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #2e7d32;
+  text-align: center;
+  margin: 40px 0 30px;
+  font-size: 2.25rem;
+}
+
+/* ============ Cards ============ */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+/* ============ Form Elements ============ */
+input[type="text"],
+input[type="number"],
+.form-select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+.form-select:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 6px rgba(46, 125, 50, 0.3);
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+.form-select:hover {
+  border-color: #4caf50;
+}
+
+/* ============ Buttons ============ */
+button {
+  background-color: #2e7d32;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b4d1b;
+}
+
+h5.fw-bold {
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.form-check-input {
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #2e7d32;
+}
+
+h4 {
+  color: #2e7d32;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.sticky-header,
+.sticky-footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #2e7d32;
+  color: #fff;
+  z-index: 999;
+  font-weight: 600;
+}
+
+.sticky-header {
+  top: 0;
+}
+
+.sticky-footer {
+  bottom: 0;
+  font-size: 0.9rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2e7d32;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .card {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.container {
+  padding-bottom: 4rem;
+}

@@ -1,0 +1,42 @@
+.banner-content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+  will-change: transform, opacity;
+}
+
+.banner-content.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-heading {
+  animation: slideInLeft 1.2s ease forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.text-glow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.order-button {
+  transition: all 0.3s ease-in-out;
+}
+
+.order-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+html {
+  scroll-behavior: smooth;
+}
